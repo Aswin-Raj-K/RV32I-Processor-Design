@@ -1,0 +1,374 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Dec 24 12:41:50 2022
+# Process ID: 13376
+# Current directory: E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.runs/synth_1
+# Command line: vivado.exe -log Processor_Wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Processor_Wrapper.tcl
+# Log file: E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.runs/synth_1/Processor_Wrapper.vds
+# Journal file: E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Processor_Wrapper.tcl -notrace
+Command: synth_design -top Processor_Wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16820
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1116.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Processor_Wrapper' [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/Processor_Wrapper.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Processor_Top' [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/Processor_Top.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (1#1) [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit_V2' [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ControlUnit_V2.v:3]
+	Parameter ST_IDLE bound to: 0 - type: integer 
+	Parameter ST_FETCH bound to: 1 - type: integer 
+	Parameter ST_DECODE bound to: 2 - type: integer 
+	Parameter ST_ALU bound to: 3 - type: integer 
+	Parameter ST_REG bound to: 4 - type: integer 
+	Parameter ST_DM bound to: 5 - type: integer 
+	Parameter ST_INCREMENT bound to: 6 - type: integer 
+	Parameter ST_HALT bound to: 7 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ControlUnit_V2.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ControlUnit_V2.v:52]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ControlUnit_V2.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ControlUnit_V2.v:88]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ControlUnit_V2.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ControlUnit_V2.v:123]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ControlUnit_V2.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit_V2' (2#1) [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ControlUnit_V2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/DataMemory.v:3]
+	Parameter BLOCK_DATA_MEMORY bound to: 3'b000 
+	Parameter BLOCK_ROM bound to: 3'b001 
+	Parameter BLOCK_SWITCH bound to: 3'b010 
+	Parameter BLOCK_LED bound to: 3'b011 
+	Parameter BLOCK_IM bound to: 3'b100 
+INFO: [Synth 8-3876] $readmem data file 'DataMemoryData.mem' is read successfully [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/DataMemory.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/DataMemory.v:73]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/DataMemory.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (3#1) [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ImmExt' [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ImmExt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ImmExt' (4#1) [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ImmExt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataExt' [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/DataExt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DataExt' (5#1) [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/DataExt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'InstructionDecoder' [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/InstructionDecoder.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/InstructionDecoder.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionDecoder' (6#1) [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/InstructionDecoder.v:4]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/InstructionMemory.v:4]
+	Parameter im_start_addr bound to: 16777216 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'InstructionMemoryData.mem' is read successfully [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/InstructionMemory.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (7#1) [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/InstructionMemory.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ProgramCounter.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (8#1) [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/ProgramCounter.v:4]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/RegFile.v:4]
+INFO: [Synth 8-3876] $readmem data file 'RegFileData.mem' is read successfully [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/RegFile.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (9#1) [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/RegFile.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Processor_Top' (10#1) [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/Processor_Top.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Processor_Wrapper' (11#1) [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/sources_1/new/Processor_Wrapper.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1116.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1116.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1116.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1116.906 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Processor_Wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Processor_Wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1219.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1219.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1219.633 ; gain = 102.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1219.633 ; gain = 102.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1219.633 ; gain = 102.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ControlUnit_V2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                              000 |                              000
+                ST_FETCH |                              001 |                              001
+               ST_DECODE |                              010 |                              010
+                 ST_HALT |                              011 |                              111
+                  ST_ALU |                              100 |                              011
+                   ST_DM |                              101 |                              101
+                  ST_REG |                              110 |                              100
+            ST_INCREMENT |                              111 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ControlUnit_V2'
+INFO: [Synth 8-3971] The signal "RegFile:/regfile_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1219.633 ; gain = 102.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 10    
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	  24 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 3     
+	   3 Input   32 Bit        Muxes := 2     
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   5 Input   11 Bit        Muxes := 1     
+	  31 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   3 Input    3 Bit        Muxes := 5     
+	   4 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 2     
+	   9 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	  31 Input    1 Bit        Muxes := 2     
+	  11 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 7     
+	   5 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "Processor_Wrapper/processor/S9/regfile_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1219.633 ; gain = 102.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------------+------------------------+---------------+----------------+
+|Module Name       | RTL Object             | Depth x Width | Implemented As | 
++------------------+------------------------+---------------+----------------+
+|Processor_Wrapper | processor/S7/data1_reg | 256x32        | Block RAM      | 
+|Processor_Wrapper | processor/S7/data2_reg | 256x32        | Block RAM      | 
++------------------+------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------------+------------------------------+-----------+----------------------+------------------+
+|Module Name       | RTL Object                   | Inference | Size (Depth x Width) | Primitives       | 
++------------------+------------------------------+-----------+----------------------+------------------+
+|Processor_Wrapper | processor/S3/data_memory_reg | Implied   | 1 K x 32             | RAM256X1S x 128	 | 
++------------------+------------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1219.633 ; gain = 102.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1378.215 ; gain = 261.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
+-------NONE-------
+
+Distributed RAM: Final Mapping	Report
++------------------+------------------------------+-----------+----------------------+------------------+
+|Module Name       | RTL Object                   | Inference | Size (Depth x Width) | Primitives       | 
++------------------+------------------------------+-----------+----------------------+------------------+
+|Processor_Wrapper | processor/S3/data_memory_reg | Implied   | 1 K x 32             | RAM256X1S x 128	 | 
++------------------+------------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance processor/S9/regfile_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processor/S9/regfile_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processor/S7/data1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processor/S7/data1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processor/S7/data2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processor/S7/data2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1388.277 ; gain = 271.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1388.277 ; gain = 271.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1388.277 ; gain = 271.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1388.277 ; gain = 271.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1388.277 ; gain = 271.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1388.277 ; gain = 271.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1388.277 ; gain = 271.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    93|
+|3     |LUT1      |     3|
+|4     |LUT2      |   191|
+|5     |LUT3      |   268|
+|6     |LUT4      |   252|
+|7     |LUT5      |   252|
+|8     |LUT6      |   649|
+|9     |MUXF7     |    29|
+|10    |RAM256X1S |   128|
+|11    |RAMB18E1  |     4|
+|13    |FDRE      |   191|
+|14    |FDSE      |     1|
+|15    |IBUF      |    18|
+|16    |OBUF      |    16|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1388.277 ; gain = 271.371
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1388.277 ; gain = 168.645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1388.277 ; gain = 271.371
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1391.039 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1391.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1391.039 ; gain = 274.133
+INFO: [Common 17-1381] The checkpoint 'E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.runs/synth_1/Processor_Wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Processor_Wrapper_utilization_synth.rpt -pb Processor_Wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 24 12:42:55 2022...

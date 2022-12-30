@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Processor_Wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Processor_Wrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2120001fs"></ZoomEndTime>
+      <Cursor1Time time="2120000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="306"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/Processor_Wrapper/sw" type="array">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Wrapper/leds" type="array">
+      <obj_property name="ElementShortName">leds[15:0]</obj_property>
+      <obj_property name="ObjectShortName">leds[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Wrapper/processor/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Wrapper/processor/S2/clk_cnt" type="logic">
+      <obj_property name="ElementShortName">clk_cnt</obj_property>
+      <obj_property name="ObjectShortName">clk_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Wrapper/processor/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="group12848" type="group">
+      <obj_property name="label">PC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/Processor_Wrapper/processor/S8/we" type="logic">
+         <obj_property name="ElementShortName">we</obj_property>
+         <obj_property name="ObjectShortName">we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S8/en" type="logic">
+         <obj_property name="ElementShortName">en</obj_property>
+         <obj_property name="ObjectShortName">en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S8/addr_next" type="array">
+         <obj_property name="ElementShortName">addr_next[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_next[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S8/addr" type="array">
+         <obj_property name="ElementShortName">addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S8/ALU_in" type="array">
+         <obj_property name="ElementShortName">ALU_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S8/PC" type="array">
+         <obj_property name="ElementShortName">PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group12849" type="group">
+      <obj_property name="label">Reg File</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/ALU_out" type="array">
+         <obj_property name="ElementShortName">ALU_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/DM_out" type="array">
+         <obj_property name="ElementShortName">DM_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DM_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/regfile" type="array">
+         <obj_property name="ElementShortName">regfile[0:31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regfile[0:31][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group12861" type="group">
+         <obj_property name="label">Control Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/Processor_Wrapper/processor/S9/en" type="logic">
+            <obj_property name="ElementShortName">en</obj_property>
+            <obj_property name="ObjectShortName">en</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S9/l_s" type="logic">
+            <obj_property name="ElementShortName">l_s</obj_property>
+            <obj_property name="ObjectShortName">l_s</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S9/we" type="logic">
+            <obj_property name="ElementShortName">we</obj_property>
+            <obj_property name="ObjectShortName">we</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group12857" type="group">
+         <obj_property name="label">Write Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/Processor_Wrapper/processor/S9/pc_addr" type="array">
+            <obj_property name="ElementShortName">pc_addr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">pc_addr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S9/rs1_addr" type="array">
+            <obj_property name="ElementShortName">rs1_addr[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rs1_addr[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S9/rs2_addr" type="array">
+            <obj_property name="ElementShortName">rs2_addr[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rs2_addr[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S9/rd_addr" type="array">
+            <obj_property name="ElementShortName">rd_addr[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rd_addr[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S9/rs1_data" type="array">
+            <obj_property name="ElementShortName">rs1_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">rs1_data[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S9/rs2_data" type="array">
+            <obj_property name="ElementShortName">rs2_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">rs2_data[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group12855" type="group">
+         <obj_property name="label">Control Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/Processor_Wrapper/processor/S8/we" type="logic">
+            <obj_property name="ElementShortName">we</obj_property>
+            <obj_property name="ObjectShortName">we</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S8/en" type="logic">
+            <obj_property name="ElementShortName">en</obj_property>
+            <obj_property name="ObjectShortName">en</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/regfile[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/regfile[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/regfile[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/regfile[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/regfile[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/regfile[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/regfile[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/regfile[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/regfile[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group231" type="group">
+      <obj_property name="label">DM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/Processor_Wrapper/processor/S3/leds" type="array">
+         <obj_property name="ElementShortName">leds[15:0]</obj_property>
+         <obj_property name="ObjectShortName">leds[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S3/block" type="array">
+         <obj_property name="ElementShortName">block[2:0]</obj_property>
+         <obj_property name="ObjectShortName">block[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S3/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S3/data_memory" type="array">
+         <obj_property name="ElementShortName">data_memory[0:1023][31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[0:1023][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S3/data" type="array">
+         <obj_property name="ElementShortName">data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S3/translated_addr" type="array">
+         <obj_property name="ElementShortName">translated_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">translated_addr[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S3/addr" type="array">
+         <obj_property name="ElementShortName">addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group238" type="group">
+         <obj_property name="label">Control Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/Processor_Wrapper/processor/S3/we" type="array">
+            <obj_property name="ElementShortName">we[3:0]</obj_property>
+            <obj_property name="ObjectShortName">we[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S3/rd" type="logic">
+            <obj_property name="ElementShortName">rd</obj_property>
+            <obj_property name="ObjectShortName">rd</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group12850" type="group">
+      <obj_property name="label">Control Unit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/Processor_Wrapper/processor/S2/op" type="array">
+         <obj_property name="ElementShortName">op[10:0]</obj_property>
+         <obj_property name="ObjectShortName">op[10:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S2/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S2/instr" type="array">
+         <obj_property name="ElementShortName">instr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S2/state" type="array">
+         <obj_property name="ElementShortName">state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S2/next_state" type="array">
+         <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group12851" type="group">
+      <obj_property name="label">IM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Processor_Wrapper/processor/S7/IM" type="array">
+         <obj_property name="ElementShortName">IM[0:512][31:0]</obj_property>
+         <obj_property name="ObjectShortName">IM[0:512][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group123" type="group">
+         <obj_property name="label">Port1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/Processor_Wrapper/processor/S7/rd1" type="logic">
+            <obj_property name="ElementShortName">rd1</obj_property>
+            <obj_property name="ObjectShortName">rd1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S7/addr1" type="array">
+            <obj_property name="ElementShortName">addr1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">addr1[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S7/translated_addr1" type="array">
+            <obj_property name="ElementShortName">translated_addr1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">translated_addr1[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S7/addr2" type="array">
+            <obj_property name="ElementShortName">addr2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">addr2[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S7/translated_addr2" type="array">
+            <obj_property name="ElementShortName">translated_addr2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">translated_addr2[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S7/data1" type="array">
+            <obj_property name="ElementShortName">data1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">data1[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group124" type="group">
+         <obj_property name="label">Port2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/Processor_Wrapper/processor/S7/rd2" type="logic">
+            <obj_property name="ElementShortName">rd2</obj_property>
+            <obj_property name="ObjectShortName">rd2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S7/addr2" type="array">
+            <obj_property name="ElementShortName">addr2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">addr2[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S7/data2" type="array">
+            <obj_property name="ElementShortName">data2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">data2[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group12852" type="group">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group81" type="group">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/Processor_Wrapper/processor/S1/bc" type="logic">
+            <obj_property name="ElementShortName">bc</obj_property>
+            <obj_property name="ObjectShortName">bc</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S1/mux1" type="array">
+            <obj_property name="ElementShortName">mux1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">mux1[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S1/en1" type="logic">
+            <obj_property name="ElementShortName">en1</obj_property>
+            <obj_property name="ObjectShortName">en1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S1/mux2" type="array">
+            <obj_property name="ElementShortName">mux2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">mux2[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Processor_Wrapper/processor/S1/en2" type="logic">
+            <obj_property name="ElementShortName">en2</obj_property>
+            <obj_property name="ObjectShortName">en2</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S1/imm_ext" type="array">
+         <obj_property name="ElementShortName">imm_ext[31:0]</obj_property>
+         <obj_property name="ObjectShortName">imm_ext[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S1/ALU_out" type="array">
+         <obj_property name="ElementShortName">ALU_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/rs1_addr" type="array">
+         <obj_property name="ElementShortName">rs1_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1_addr[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S1/rs1_data" type="array">
+         <obj_property name="ElementShortName">rs1_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1_data[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S9/rs2_addr" type="array">
+         <obj_property name="ElementShortName">rs2_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2_addr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S1/rs2_data" type="array">
+         <obj_property name="ElementShortName">rs2_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2_data[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S1/addr" type="array">
+         <obj_property name="ElementShortName">addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group247" type="group">
+      <obj_property name="label">Decoder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Processor_Wrapper/processor/S6/instr" type="array">
+         <obj_property name="ElementShortName">instr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S6/rs1_addr" type="array">
+         <obj_property name="ElementShortName">rs1_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1_addr[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S6/rs2_addr" type="array">
+         <obj_property name="ElementShortName">rs2_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2_addr[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Processor_Wrapper/processor/S6/imm_data" type="array">
+         <obj_property name="ElementShortName">imm_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">imm_data[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

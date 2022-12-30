@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Dec 24 12:43:20 2022
+# Process ID: 460
+# Current directory: E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.runs/impl_1
+# Command line: vivado.exe -log Processor_Wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Processor_Wrapper.tcl -notrace
+# Log file: E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.runs/impl_1/Processor_Wrapper.vdi
+# Journal file: E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Processor_Wrapper.tcl -notrace

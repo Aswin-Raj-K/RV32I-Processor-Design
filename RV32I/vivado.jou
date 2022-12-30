@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Nov 19 00:53:40 2022
+# Process ID: 1732
+# Current directory: E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1156 E:\Academics_NYU\Sem1\Advanced VLSI Design\Project\RV32I\RV32I.xpr
+# Log file: E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/vivado.log
+# Journal file: E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Academics_NYU/Sem1/Advanced VLSI Design/Project/RV32I/RV32I.xpr}
+update_compile_order -fileset sources_1
