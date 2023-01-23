@@ -1,1 +1,1 @@
-![alt text](Processor_Datapath.png)
+![alt text](Processor_Data_Path.png)
