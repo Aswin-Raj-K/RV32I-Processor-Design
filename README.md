@@ -12,6 +12,8 @@ A visual representation of the complete datapath of the designed RISC V R32I pro
 
 In processor design, a Finite State Machine (FSM) plays a critical role in modeling the control logic responsible for coordinating various processor components such as the instruction fetch unit, decoder, and execution unit. It defines a series of steps for the orderly execution of instructions, encompassing stages like instruction fetching, decoding, and execution, each governed by specific conditions.
 
+![Processor Data Path](FSM.png)
+
 ### Key Characteristics of the FSM:
 
 - **States**: The FSM operates with a set of 8 distinct states, each representing a specific phase in the processor's operation. These states include fundamental stages like instruction fetching, decoding, and execution.
@@ -26,7 +28,7 @@ In processor design, a Finite State Machine (FSM) plays a critical role in model
 
 The FSM serves as the backbone of the processor's control unit, ensuring that instructions are executed in a well-defined sequence and that the necessary data and signals are routed to the appropriate components at each stage of execution.
 
-## 5. Design Analysis
+## Design Analysis
 
 In the realm of processor design, performance and area analysis are of paramount importance. These analyses are essential for evaluating the overall effectiveness of a design. Various metrics come into play, providing insights into both performance and physical attributes. In terms of performance analysis, metrics such as clock frequency (indicating maximum execution speed, e.g., close to 100MHz for NYU-6463-RV32I), Instructions per Second (IPS, reflecting task completion rate), and CPI (Cycles per Instruction, with NYU-6463-RV32I boasting a CPI of 2) are instrumental. On the other hand, area analysis involves assessing the size and complexity of the processor. Metrics like gate count (quantifying logic gate numbers) and power consumption (influenced by factors like clock frequency, IPS, and processor complexity) are key in this evaluation. Additionally, timing analysis verifies the design's adherence to timing requirements, while resource utilization demonstrates efficient allocation of components such as block RAM and bonded pins.
 
@@ -57,12 +59,19 @@ The goal here was to evaluate the processor's performance and correctness in exe
 To facilitate C program development, GCC compiler integration and runtime libraries were essential. The GCC toolchain was set up, with plans to test and validate it using various C programs. While data access from the instruction memory was achieved, time constraints prevented the completion of the C programming portion.
 
 
-## 8. Future Scope
+## Future Scope
 
-We discuss potential extensions and improvements for our processor design, outlining directions for future development and enhancement.
+The NYU-6463-RV32I is a 32-bit processor supporting a subset of RISC-V instructions, thoroughly tested at the component and high-level testing levels. Future enhancements and directions include:
 
-## 9. Conclusion
+1. **Optimization:** Potential for improved performance and reduced power consumption through techniques like pipeline optimization, register renaming, and one-clock-cycle execution, boosting performance by approximately 40%.
 
-In the concluding section, we summarize the project's achievements, findings, and the overall success of our RISC V R32I processor design.
+2. **Instruction Set Extension:** Adding support for more RISC-V ISA instructions or features, such as floating-point operations or vector instructions.
 
-Thank you for visiting our project README. For additional resources, including project files, videos, and related materials, please refer to the [Resources](#resources) section.
+3. **Multicore Support:** Extending the processor for multicore architectures with inter-core communication mechanisms, like message passing or shared memory.
+
+4. **Hardware Acceleration:** Incorporating dedicated hardware acceleration units for specific instruction or application acceleration, such as cryptography or machine learning.
+
+5. **Embedded Systems:** Utilizing the processor as a central processing unit (CPU) in embedded systems, requiring additional hardware, software components, and system integration.
+
+In conclusion, the RISC-V processor project successfully designed and implemented a compliant 32-bit processor, showcasing high performance and efficiency. Challenges were addressed through collaboration and online resources. Recommendations include broader testing, optimization for specific applications, exploring RISC-V's potential in various domains, and further developing the RISC-V ecosystem to support diverse applications and use cases.
+
