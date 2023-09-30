@@ -1,6 +1,6 @@
 # NYU-6463-RV32I Processor Design
 
-Welcome to the NYU-6463-RV32I Processor Design project README. This document provides a comprehensive overview of our RISC V R32I processor design project.
+Welcome to the NYU-6463-RV32I Processor Design project. This repo provides a comprehensive overview of our RISC V R32I processor design project.
 
 ## Complete Design Datapath
 
