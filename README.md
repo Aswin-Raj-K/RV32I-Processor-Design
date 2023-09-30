@@ -2,13 +2,11 @@
 
 Welcome to the NYU-6463-RV32I Processor Design project README. This document provides a comprehensive overview of our RISC V R32I processor design project.
 
-## 1. Complete Design Datapath
+## Complete Design Datapath
 
 ![Processor Data Path](Processor_Data_Path.png)
 
 A visual representation of the complete datapath of the designed RISC V R32I processor is provided here. This includes major components such as the Program Counter (PC), Control Unit (CU), Instruction Memory (IM), Data Memory (DM), Arithmetic Logic Unit (ALU), and Register File (Reg File).
-
-## 3. Finite State Machine
 
 ## Finite State Machine (FSM) in Processor Design
 
@@ -28,58 +26,36 @@ In processor design, a Finite State Machine (FSM) plays a critical role in model
 
 The FSM serves as the backbone of the processor's control unit, ensuring that instructions are executed in a well-defined sequence and that the necessary data and signals are routed to the appropriate components at each stage of execution.
 
-
-## 4. The Whole Processor
-
-Here, we provide an image and a detailed description of the complete processor's datapath. This section gives a holistic view of how all the components work together to execute instructions.
-
 ## 5. Design Analysis
 
-This section presents a comprehensive analysis of various aspects of our processor's design, including its performance, area requirements, timing characteristics, and resource utilization.
+In the realm of processor design, performance and area analysis are of paramount importance. These analyses are essential for evaluating the overall effectiveness of a design. Various metrics come into play, providing insights into both performance and physical attributes. In terms of performance analysis, metrics such as clock frequency (indicating maximum execution speed, e.g., close to 100MHz for NYU-6463-RV32I), Instructions per Second (IPS, reflecting task completion rate), and CPI (Cycles per Instruction, with NYU-6463-RV32I boasting a CPI of 2) are instrumental. On the other hand, area analysis involves assessing the size and complexity of the processor. Metrics like gate count (quantifying logic gate numbers) and power consumption (influenced by factors like clock frequency, IPS, and processor complexity) are key in this evaluation. Additionally, timing analysis verifies the design's adherence to timing requirements, while resource utilization demonstrates efficient allocation of components such as block RAM and bonded pins.
 
-### 5.1 Performance Analysis
+## Testing
 
-We explain the performance metrics used to evaluate our processor, such as clock frequency, instructions per second, and CPI (cycles per instruction). We also provide performance benchmark results.
+Testing for the RV32I processor encompassed various stages:
 
-### 5.2 Area Analysis
+### Unit Testing
 
-An analysis of the processor's gate count, power consumption, and physical size is presented in this section. We discuss the impact of the design on hardware resources.
+The RV32I processor underwent comprehensive unit testing, systematically evaluating all 40 supported instructions. Each instruction's expected output was validated against the testbench, with data memory initialized beforehand. This approach allowed flexibility for users to modify input data, ensuring robust testing of all potential corner cases. Successful completion of this testbench indicated the design's accuracy and alignment with performance and power targets. It also revealed areas for optimization and the potential addition of more instructions or features.
 
-### 5.3 Timing Analysis
+### High-Level Testing
 
-A summary of the timing analysis results, including critical paths and clock distribution, is provided to assess the processor's timing performance.
+#### Input Output Testing
 
-### 5.4 Resource Utilization
+This test aimed to control LEDs and switches connected to the processor. An assembly program was written for this purpose, demonstrating successful control of LEDs using switches.
 
-We provide detailed information about the resource utilization in our processor, including the number of block RAMs used and the bonded pins.
+#### Generating Fibonacci Series
 
-## 6. Testing
+This simulation assessed the processor's performance and correctness in executing a Fibonacci series generation program. The results showed correct execution, suggesting the processor's suitability for fast and efficient mathematical computations.
 
-This section offers insights into the testing procedures we employed to validate the functionality of our processor.
+#### RC5 Encryption
 
-### 6.1 Unit Testing
+The goal here was to evaluate the processor's performance and correctness in executing an RC5 encryption program. The simulation results demonstrated correct execution and high performance, with an execution time of 500 microseconds and a CPI of 2.00. This indicated efficient program execution.
 
-We explain our approach to unit testing for different instructions, ensuring that individual components perform as expected.
+### Support for C
 
-### 6.2 High-Level Testing
+To facilitate C program development, GCC compiler integration and runtime libraries were essential. The GCC toolchain was set up, with plans to test and validate it using various C programs. While data access from the instruction memory was achieved, time constraints prevented the completion of the C programming portion.
 
-Testing procedures for high-level functions are described, including Input-Output testing, Fibonacci series generation, and RC5 encryption.
-
-#### 6.2.1 Input Output Testing
-
-We provide an explanation of input-output testing procedures and share the results obtained during testing.
-
-#### 6.2.2 Generating Fibonacci Series
-
-Details about the testing of our processor's ability to generate Fibonacci series, along with test results, are presented.
-
-#### 6.2.3 RC5 Encryption
-
-We explain the RC5 encryption testing process and share the outcomes of our encryption tests.
-
-## 7. Support For C
-
-This section contains information on setting up GCC compiler support for C programs on our processor, making it more versatile and adaptable for various applications.
 
 ## 8. Future Scope
 
